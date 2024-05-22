@@ -9,13 +9,18 @@ import Food from './Food';
 import Card from './Components/Card';
 import Parents from './Props/Parents';
 import UserGreeting from './ConditionalRundering/UserGreeting';
+import Lists from './RenderLists/Lists';
 
 export default function App() {
   return (
     
    
     <>
-      <UserGreeting />
+    {/* Runnder Conditional Rendering */}
+      {/* <UserGreeting /> */}
+
+    {/* Runder Lists */}
+      <Lists />
     </>
 
 
