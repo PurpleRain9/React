@@ -10,6 +10,7 @@ import Card from './Components/Card';
 import Parents from './Props/Parents';
 import UserGreeting from './ConditionalRundering/UserGreeting';
 import Lists from './RenderLists/Lists';
+import ClickEvent from './ClickEvents/ClickEvent';
 
 export default function App() {
   return (
@@ -20,7 +21,10 @@ export default function App() {
       {/* <UserGreeting /> */}
 
     {/* Runder Lists */}
-      <Lists />
+      {/* <Lists /> */}
+
+    {/* Click Events */}
+      <ClickEvent />
     </>
 
 
