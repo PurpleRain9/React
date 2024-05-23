@@ -11,11 +11,10 @@ import Parents from './Props/Parents';
 import UserGreeting from './ConditionalRundering/UserGreeting';
 import Lists from './RenderLists/Lists';
 import ClickEvent from './ClickEvents/ClickEvent';
+import StateParent from './useState/StateParent';
 
 export default function App() {
   return (
-    
-   
     <>
     {/* Runnder Conditional Rendering */}
       {/* <UserGreeting /> */}
@@ -24,10 +23,12 @@ export default function App() {
       {/* <Lists /> */}
 
     {/* Click Events */}
-      <ClickEvent />
+      {/* <ClickEvent /> */}
+
+    {/* Use State */}
+      <StateParent/>
+
     </>
-
-
   )
 }
 
