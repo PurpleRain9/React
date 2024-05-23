@@ -12,6 +12,7 @@ import UserGreeting from './ConditionalRundering/UserGreeting';
 import Lists from './RenderLists/Lists';
 import ClickEvent from './ClickEvents/ClickEvent';
 import StateParent from './useState/StateParent';
+import OnChangeEventsComponent from './OnChangeEvent/OnChangeEvent'
 
 export default function App() {
   return (
@@ -26,8 +27,10 @@ export default function App() {
       {/* <ClickEvent /> */}
 
     {/* Use State */}
-      <StateParent/>
+      {/* <StateParent/> */}
 
+    {/* OnChage */}
+    <OnChangeEventsComponent />
     </>
   )
 }
