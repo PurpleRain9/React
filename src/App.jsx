@@ -12,7 +12,8 @@ import UserGreeting from './ConditionalRundering/UserGreeting';
 import Lists from './RenderLists/Lists';
 import ClickEvent from './ClickEvents/ClickEvent';
 import StateParent from './useState/StateParent';
-import OnChangeEventsComponent from './OnChangeEvent/OnChangeEvent'
+import OnChangeEventsComponent from './OnChangeEvent/OnChangeEvent';
+import NestComponents from './NestComponents/NestComponents';
 
 export default function App() {
   return (
@@ -30,7 +31,10 @@ export default function App() {
       {/* <StateParent/> */}
 
     {/* OnChage */}
-    <OnChangeEventsComponent />
+    {/* <OnChangeEventsComponent /> */}
+
+    {/* Nest Component */}
+    <NestComponents /> 
     </>
   )
 }

@@ -14,7 +14,6 @@ function OnChangeEventsComponent () {
     
     const handleItemsChange = (e) => {
         setItems(e.target.value);
-
     }
 
     const handleCommantChange = (e) => {
