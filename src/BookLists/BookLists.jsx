@@ -1,5 +1,6 @@
 import Books from "./Books";
 import { useState } from "react";
+import books from "../books";
 
 const BookLists = () => {
      // Jsx Css / Tailwind Css in the nest Components;
@@ -8,24 +9,20 @@ const BookLists = () => {
      const image = 'https://images-na.ssl-images-amazon.com/images/I/81MYaU742TL._AC_UL900_SR900,600_.jpg';
      const author = 'Victor Davis Hanson';
 
-     const books = [
-        {
-            id: 1,
-            author: 'Victor Davis Hanson',
-            title: 'The End of Everything: How Wars Descend into Annihilation',
-            image: 'https://images-na.ssl-images-amazon.com/images/I/81MYaU742TL._AC_UL900_SR900,600_.jpg',
-        },
-        {
-            id: 2,
-            author: 'Kristin Hannah',
-            title: 'The Women: A Novel',
-            image: 'https://images-na.ssl-images-amazon.com/images/I/913C+MR3S5L._AC_UL900_SR900,600_.jpg',
-        },
-     ]
+     
+
+     const findBooks = (id) => {
+        console.log(`this is ${id}`);
+        const book = books.find((book) => book.id  === id);
+        console.log(`book ${book.image}`);
+        console.log(book);
+
+     }
 
      const booksMap = books.map((book) => {
+        
         // Adding to childern elements in the Books Components;
-        return <Books key={book.id} title={book.title} image={book.image} author={book.author} articleStyles={articleStyles} >{book.author == 'Kristin Hannah' ? <p className="text-xs text-center mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo reiciendis nulla optio, doloribus recusandae necessitatibus, ut consequatur natus odit ea perspiciatis quibusdam itaque. Veritatis ipsum recusandae, atque tempore distinctio beatae.</p> : ''}</Books>
+        return <Books key={book.id} id={book.id} findBooks={findBooks} title={book.title} image={book.image} author={book.author} articleStyles={articleStyles} >{book.author == 'Kristin Hannah' ? <p className="text-xs text-center mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo reiciendis nulla optio, doloribus recusandae necessitatibus, ut consequatur natus odit ea perspiciatis quibusdam itaque. Veritatis ipsum recusandae, atque tempore distinctio beatae.</p> : ''}</Books>
      })
     return (
         <div className="flex flex-col justify-center items-center h-[100%]">
